@@ -1,0 +1,94 @@
+   <!DOCTYPE html>
+   <html lang="fr">
+    <!-- Poppins pour le texte et Montserrat pour les titres -->
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Montserrat:wght@600;700&display=swap">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/projet.css">
+       <title>Projets - MARC LOSSON</title>
+   </head>
+   <body>
+      <main id="project-page">
+        <a href="index.html" class="back-btn">← Retour</a>
+        <!-- 5 SECTIONS POUR DECRIRE LE PROJET SAAS MONITEUR ALERTES -->
+
+        <section class="project-header">
+            <h1>SAAS Moniteur Alertes</h1>
+            <p class="subtitle">Surveillance automatique du Moniteur Belge avec alertes en temps réel.</p>
+        </section>
+        <section class="project-description">
+            <h2 id="presentation">Présentation</h2>
+            <p>Moniteur Alertes est une application web complète permettant de surveiller automatiquement 
+            les publications du Moniteur Belge liées à la solvabilité des entreprises. 
+            Le système repose sur un moteur de scraping Python robuste (regex + fallback BCE) 
+            et génère des alertes en temps réel pour les utilisateurs.
+            L’ensemble du projet a été conçu, développé et déployé en autonomie : 
+            architecture backend, sécurité serveur, pipeline d’automatisation et interface publique.   
+            </p>
+        </section>
+        <section class="project-video">
+            <h2>Démonstration du fonctionnement</h2>
+            <h3 id="saasTeamleader">Exemple d'Intégration TEAMLEADER</h3>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/av_CbDQhCP4"
+                    title="Démo intégration Teamleader"
+                    allowfullscreen>
+                </iframe>
+                    
+            </div>
+            <h3 id="saasOdoo">Exemple d'Intégration ODOO</h3>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/QarIlEsoFYM"
+                    title="Démo intégration Odoo"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <h3 id="saasDemo">Site de démonstration</h3>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/OlsBzrkVK9U"
+                    title="Démo Moniteur Alertes"
+                    allowfullscreen>
+                </iframe>
+                
+            </div>
+        </section>
+
+        <section class="project-features">
+            <h2 id="SaasFonct">Fonctionnalités principales</h2>
+            <ul>
+                <li>Scraping Python avancé du Moniteur belge (regex + fallback automatique vers la BCE)</li>
+                <li>Détection intelligente des publications liées à la solvabilité et aux procédures judiciaires</li>
+                <li>Système d’alertes email en temps réel (pipeline automatisé + gestion des erreurs)</li>
+                <li>Tableau de bord utilisateur : suivi des entreprises, historique, filtres, statut des alertes</li>
+                <li>Gestion complète des utilisateurs : inscription, authentification, rôles, préférences</li>
+                <li>Intégration Teamleader validée (lecture contacts/entreprises, synchronisation automatique)</li>
+                <li>Intégration Odoo (synchronisation des partenaires et automatisation des vérifications)</li>
+                <li>Interface publique moderne en React / Next.js, responsive et accessible</li>
+            </ul>
+        </section>
+
+        <section class="project-tech">
+            <h2 id="SaasTech">Stack technique</h2>
+            <ul>
+                <li><strong>Backend :</strong> Python (scraping, regex), tâches planifiées (cron), 
+                gestion des erreurs réseau, logs, monitoring</li>
+                <li><strong>Infrastructure :</strong> Serveur Linux sur DigitalOcean, configuration manuelle, 
+                sécurisation SSH, firewall UFW, reverse proxy Nginx, Gunicorn, services systemd</li>
+                <li><strong>Frontend :</strong> React + Next.js (déploiement sur Vercel)</li>
+                <li><strong>Automatisation :</strong> Pipeline complet : scraping → analyse → filtrage → alertes email ou intégrations ERP et CMS</li>
+                <li><strong>Intégrations externes :</strong> Teamleader API (OAuth, synchronisation), Odoo API</li>
+                <li><strong>Déploiement & maintenance :</strong> supervision, logs, webhooks, mises à jour serveur, optimisation des performances</li>
+            </ul>
+
+        </section>
+
+      </main>
+
+    </body>
+    </html>

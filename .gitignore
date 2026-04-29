@@ -1,0 +1,21 @@
+# fichiers système Windows
+Thumbs.db
+Desktop.ini
+
+# dossier node (au cas où un jour)
+node_modules/
+
+# fichiers temporaires
+*.log
+*.tmp
+
+# fichiers éditeur
+.vscode/
+.idea/
+
+# mac
+.DS_Store
+
+notepad .gitignore
+
+*.mp4

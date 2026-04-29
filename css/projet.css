@@ -1,0 +1,54 @@
+/* CONTAINER PRINCIPAL :
+   - max-width limite la largeur sur grands écrans
+   - margin auto centre le contenu
+   → permet un comportement responsive naturel sans media queries */
+#project-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 0.9rem;
+}
+
+.project-header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 1rem;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.project-video h2,
+.project-description h2,
+.project-features h2,
+.project-tech h2,
+.project-impact h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* VIDEO RESPONSIVE (iframe YouTube) :
+   - width: 100% → s’adapte à la largeur écran
+   - aspect-ratio → conserve le format 16:9
+   → fonctionne sans media queries */
+.video-wrapper iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    border: none;
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
